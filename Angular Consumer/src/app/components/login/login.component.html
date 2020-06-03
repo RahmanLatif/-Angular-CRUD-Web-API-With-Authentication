@@ -1,0 +1,20 @@
+<mat-toolbar>
+    <span>Login</span>
+</mat-toolbar>
+<mat-card fxLayout="column" fxLayoutAlign="center center"  class="my-card">
+    <mat-card-content >
+        <form class="my-form" [formGroup]="myform" >
+            <mat-form-field class="full-width">
+                <mat-label>Username</mat-label>
+                <input type="text" matInput placeholder="Username" name="Username" formControlName="Username">
+            </mat-form-field>
+            <mat-form-field class="full-width">
+                <mat-label>Password</mat-label>
+                <input type="password" matInput placeholder="Password" name="Password" formControlName="Password">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-actions >
+        <button  mat-raised-button (click)="Login()" color="primary">Login</button>
+    </mat-card-actions>
+</mat-card>

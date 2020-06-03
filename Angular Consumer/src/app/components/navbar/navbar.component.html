@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <!--  <span>HOME</span> -->
+     <span><a routerLink="/Products">HOME</a></span>
+     <span class="spacer"></span>
+     <a mat-button *ngIf="access_token==''" routerLink="/Register">Register</a>
+     <a mat-button *ngIf="access_token==''" routerLink="/Login">Login</a>
+     <a mat-button *ngIf="access_token!=''" (click)="logout()">Logout</a>
+  </mat-toolbar-row>
+</mat-toolbar>
+<router-outlet></router-outlet>

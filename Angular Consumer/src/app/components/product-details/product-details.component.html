@@ -1,0 +1,19 @@
+<div fxLayout="column" fxLayoutAlign="space-around center">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{prod.Name}}</mat-card-title>
+            <mat-card-subtitle>{{prod.Price|currency:'USD':true}}</mat-card-subtitle>
+        </mat-card-header>
+        <img style="height: 400px;" mat-card-image src="https://picsum.photos/200" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+            <mat-label>Description : </mat-label>
+            <p>
+                {{prod.Description}}
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="BackToList()" color="primary">Back To List</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,8 @@
+.example-card {
+    width: 40%;
+  }
+  
+  .example-header-image {
+    background-image: url('https://picsum.photos/200');
+    background-size: cover;
+  }
